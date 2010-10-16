@@ -1,0 +1,56 @@
+v  06: n
+v  16: tmp
+v  26: tmp
+v  36: tmp
+v  05-n5: count
+v  04: check
+v  03-n3: perm1
+v  02-n2: perm
+v
+v
+v
+v
+v
+v ;default n;
+> 106p v  ;get argv (and the kitchen sink);
+       >  y $$$$$$$$$$$$$$$$$$$$$$$ v
+          v< ;first arg;            <
+          >| 
+            ;second arg;
+                 ;count chars;        >v                                      
+           >     > 99*{ 011p >       !|> 11g 1} v 
+                       > <   ^p11+1g11<         v
+           v                                    <
+                 ;mul by 10 for each char in input to get top multipler;
+                            > \ 25** \ v
+           >     > 1\ > 1-: |          
+                      ^                <
+                            $
+                v           <
+                 ;mul ord by top and div by 10 until 0, aggregating to 36p;
+                          v                          \ <
+                > 36p   0 > \ 68*- 36g *+ 36g91+/36p \:|
+v                                             n p60  \ < ;set n and clear stack;
+                                              
+         ;populate count;
+           v            <
+> 06g      > ::1-5p  1-:|
+v                       <
+         ;populate perm(s);
+           v                   <
+> 06g1-    > ::1-3p ::1-2p  1-:|
+v                              <
+         ;populate misc;
+>          25*3* 14p    v
+v                       <
+         
+v        ;while 1;
+             ;check < 30, print perm1;
+                              v          <
+             > 04g1-04p > 06g > :3g. 1-: |
+>        04g |                           v
+             v                           <
+             >q
+             
+
+  > 06g.25*,q

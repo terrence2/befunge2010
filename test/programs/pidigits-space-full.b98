@@ -1,0 +1,31 @@
+>;Memory; 906p                  y ;scalars;$$$$$$$$$ ;vectors;$$$$$$$$$$ ;time;$$ ;stack;$$ v
+xxxx                            v< ;first arg;                                              <
+y                               >|                                           v                 <
+zzzz                              ;second arg;        >v                           >v                              
+n                                > 99*{ 011p >       !|> 11g 1} >       > 1\ > 1-: |> \ 25** \ ^
+c                                      > <   ^p11+1g11<                      ^     $
+r t                             v       ; v                          \ < ;         <
+;Memory Map;                    > 36p   0 > \ 68*- 36g *+ 36g91+/36p \:|
+; xq:01, xr:11, xs:21, xt:31;  v  n                             p60  \ <
+; y:02;
+; zq:03, zr:13, zs:23, zt:33;
+; xn:04;
+; cnt:05;
+; req:06;
+; tmp:36;
+v                              <            ;quit if done;
+  ;init;                        v           <_q#`g50g60<                                         ;tab+cnt+nl;     <
+  ;n;    ;z;                    v           <_v#`g50g60< ># >#             ;print;    ;cnt%10;  #_ 9,':, 05g. 25*,^
+> 104p 005p 103p 013p 023p 133p v             > 05g91+%7`   |            > 02g 68*+,  05g91+%    ^
+v                               <                        ^,9<            ^ ;compose((...),z);    p50+1g50 <
+                                                                  > 91+03g* 91+13g*09-1-02g*33g*+ 13p 03p ^
+  ;y=extract(z,3)         ;   ; y != extract(z,4) ;                ;f;
+> 03g3*13g+ 23g3*33g+ / 02p > 03g4*13g+ 23g4*33g+ / 02g-         !|
+                                                                   ;t;
+                                 v ;next_x;                       <
+                                 > 04g ::: 4*2+ \ 2*1+ 0 \ 31p 21p 11p 01p 1+  04p v
+                                 v ;compose_z_x;                                   <
+                                 > 03g01g* 03g11g*13g31g*+ 23g01g*33g21g*+ 23g11g*33g31g*+ 33p 23p 13p 03p v
+                                 v ;y=extract(z,3);                                                        <
+                                 > 03g3*13g+ 23g3*33g+ / 02p v
+                            ^                                <

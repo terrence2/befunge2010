@@ -1,0 +1,15 @@
+y ;scalars;$$$$$$$$$ ;vectors;$$$$$$$$$$ ;time;$$ ;stack;$$ v
+v< ;first arg;                                              <
+>|
+  ; push length of second arg ;         ;get first factor;     
+  ;second arg;        >v                     v                <
+ > 99*{ 011p >       !|> 11g 1} >       > 1\ > 1- \ 91+* \ :1-|
+       > <   ^p11+1g11<                                       $
+v                                                             <
+          v                          \ <                      
+> 10p   0 > \ 68*- 10g *+ 10g91+/10p \:|
+                                       >\:.25*,q
+
+Args: 142
+Return: 142
+Stdout: 142
