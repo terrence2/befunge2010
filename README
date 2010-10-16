@@ -2,3 +2,10 @@ Befunge2010
 ===========
 
 A refresh of the classic funge-space interpreter.
+
+
+About
+=====
+Befunge, with its nearly-direct physical metaphor, is an excellent tool for teaching the basics of programming.  However, the strict adherence to that metaphor means that its usefulness as a teaching tool tops out very quickly -- it is nearly impossible to do any sort of structured programming with the existing befunge.  Befunge2010 seeks to remedy this problem by rolling back some of the more bizarre and esoteric funge-traversal operators and replace them with better and more explicit tools for doing structured programming.  In addition, it will attempt to provide a more complete and much easier-to-use runtime environment in order to make befunge easier to use for learning and educational activities.
+
+
