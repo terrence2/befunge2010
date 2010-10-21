@@ -76,9 +76,9 @@ class Interpreter(object):
 					ip.reverse()
 				elif instr == ord('?'):
 					val = rng.genrand32()
-					if val < 1 * (2**31): ip.delta = (1,0)
-					elif val < 2 * (2**31): ip.delta = (-1,0)
-					elif val < 3 * (2**31): ip.delta = (0,1)
+					if val < 1 * (2**31-1): ip.delta = (1,0)
+					elif val < 2 * (2**31-1): ip.delta = (-1,0)
+					elif val < 3 * (2**31-1): ip.delta = (0,1)
 					else: #val < 1 * (2**31)
 						ip.delta = (0,-1)
 
