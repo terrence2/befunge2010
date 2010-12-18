@@ -1,0 +1,34 @@
+{% extends "skeleton.html" %}
+
+{% block title %}Befunge Shell{% endblock %}
+{% block head %}
+	{{block.super}}
+	<script type="text/javascript">
+
+	/*
+		var Foo = new Class({
+			Implements: Options,
+				options: {
+					'a': 1,
+					'b': 2
+				},
+			jQuery: 'foo',
+			initialize: function(selector, options) {
+				this.setOptions(options);
+				this.jqueryObject = jQuery(selector);
+				return this;
+			},
+			stuff: function() {
+				alert('hello: ' + this.options.a);
+				return this;
+			}
+		});
+	*/
+	</script>
+{% endblock %}
+
+{% block content %}
+<div id="board">
+</div>
+{% endblock %}
+

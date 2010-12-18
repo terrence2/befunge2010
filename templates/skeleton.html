@@ -1,0 +1,62 @@
+<html>
+<head>
+	{% block head %}
+	<title>{% block title %}Befunge 2010{% endblock %}</title>
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/main.css"/>
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/jquery-ui-1.8.7.custom.css"/>
+	<script src="{{MEDIA_URL}}js/jquery-1.4.4.js"> </script>
+	<script src="{{MEDIA_URL}}js/jquery-ui-1.8.7.custom.min.js"> </script>
+	<script src="{{MEDIA_URL}}js/mootools-1.2.4-base.js"> </script>
+	<script src="{{MEDIA_URL}}js/Class.Mutators.jQuery.js"> </script>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function() {
+		/*
+		$('#header-button-home').button();
+		$('#header-button-puzzles').button();
+		$('#header-button-shell').button().click(function() {
+				window.location = '/puzzles/shell/';
+			});
+		*/
+		$('#header-buttonarea').buttonset();
+	});
+	//]]>
+	</script>
+	{% endblock %}
+</head>
+
+<body>
+<div id="body">
+	<div id="header">
+		<form>
+		<div id="header-buttonarea">
+			<input type="radio" id="button-home" onclick="window.location='/';"/>
+				<label for="button-home">Home</label>
+
+			<input type="radio" id="button-puzzles" onclick="window.location='/puzzles/';"/>
+				<label for="button-puzzles">Puzzles</label>
+
+			<input type="radio" id="button-shell" onclick="window.location='/puzzles/shell/';"/>
+				<label for="button-shell">Shell</label>
+		</div>
+		</form>
+	</div>
+
+	<!--
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    -->
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>
+

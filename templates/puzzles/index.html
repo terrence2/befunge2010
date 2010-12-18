@@ -1,0 +1,16 @@
+{% extends "skeleton.html" %}
+
+{% block title %}Puzzles{% endblock %}
+
+{% block content %}
+{% if puzzles %}
+    <ul>
+    {% for puzzle in puzzles %}
+        <li><a href="/puzzles/play/{{ puzzle.id }}/">{{ puzzle.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No puzzles are available.</p>
+{% endif %}
+{% endblock %}
+
