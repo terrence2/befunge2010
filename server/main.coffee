@@ -28,7 +28,7 @@ layout ->
 		head ->
 			title "Befunge2012"
 			meta charset: 'utf-8'
-			link rel: 'stylesheet', href: "/css/ui-darkness/jquery-ui-1.8.14.custom.css"
+			link rel: 'stylesheet', href: "/css/dark-hive/jquery-ui-1.8.14.custom.css"
 			style '''
 			body {padding: 0px; margin: 0px;}
 			'''
